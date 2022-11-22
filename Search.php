@@ -17,7 +17,8 @@ function vinSearch()
         $search = $_GET['query'];
     }
     if ($search == "") {
-        echo "";
+         echo "<div style=\"margin-left: 50px\">";
+         echo "<div>Please Enter VIN here</div>";
     } else {
         $sql = "select *  from vehicle_listings WHERE (`vin`= '$search')";
         $run = mysqli_query($conn, $sql);
