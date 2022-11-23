@@ -55,7 +55,11 @@ function vinSearch()
         <input type="text" name="query" />
         <input type="submit" value="Search" />
     </form>
-    <?php vinSearch(); ?>
+    <?php 
+    include 'UploadCSV.php'
+    readcsv();
+    vinSearch(); 
+    ?>
 
 </body>
 
